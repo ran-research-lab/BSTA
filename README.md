@@ -1,6 +1,6 @@
 # Binary search tree
 
-###Implemented using a static array.
+### Implemented using a static array.
 
 The class BSTA is an implementation of a Binary Search Tree using a 1-based static array.  It uses the array `A` to store the keys, and the array `valid` to keep track of which elements in array `A` are valid. For example, initially, the constructor should initialize all elements of `valid` to `false` to indicate that the BST is empty (i.e. that `A` does not contain any valid keys.).
 
