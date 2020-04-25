@@ -1,0 +1,8 @@
+CMakeFiles/
+CMakeCache.txt
+Makefile
+bsta
+cmake-build-debug/
+.idea/
+BSTASolution.cpp
+mainSolution.cpp

@@ -1,0 +1,22 @@
+name: Hello Testing
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build-and-run:
+    name: Build and Run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Downloading catch.hpp
+        run:  wget https://raw.githubusercontent.com/catchorg/Catch2/master/single_include/catch2/catch.hpp
+      - name: CMake the project
+        run: cmake .
+      - name: Build Code
+        run: make
+      - name: Nominal Run
+        run: ./bsta
+      - uses: actions/upload-artifact@master
+        with:
+          name: hello-artifact
+          path: main
